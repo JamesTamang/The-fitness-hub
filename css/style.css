@@ -38,15 +38,29 @@ a:hover{
 
 }
 
-main{
+main.land-page {
    background-image:url(https://cdn.pixabay.com/photo/2015/04/08/23/53/workout-713658_1280.jpg);
     background-size: cover;
     background-position: center;
     height:89vh;
+    border-radius: 2vw 2vw 0 0;
 }
+.exerciselist{
+     display: grid;
+  max-width: 1200px;
+  margin: auto;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 60px;
+  margin-bottom: 60px;
+}
+.exercise-1 {
+     display: flex;
+  flex-direction: column;
 
-.exercise {
-
+  box-shadow: 3px 3px 5px #000000ab;
+ margin: 1vw;
+    width: 30vw;
+    position: relative;
     background: white;
     min-height: 50vh;
 }
@@ -55,6 +69,7 @@ main{
     min-height: 30vh;
     background-color: red;
 }
+
 .image {
     float: left;
   width: 50%;
@@ -92,29 +107,33 @@ main{
 /*...................suman......................*/
 .filter,.exerciselist{
     background-color: white;
+}
+.filter{
+  background: white;
     min-height: 200px;
 }
 /*...................suman............*/
 footer {
-    border: 2px solid white;
     height: 20vh;
     padding: 0;
     margin: 0;
 }
+
+.image{
+    width: 30vw;
+}
 /*...........start..............................................................JAmes-Sub-page........................................*/
-.sub-page {
-   background-image:url(https://cdn.pixabay.com/photo/2015/04/08/23/53/workout-713658_1280.jpg);
-    background-size: cover;
-    background-position: center;
-    height:89vh;
+
+main.sub-page{
+
 }
 .sub-vid{
-    min-height: 60%;
+    min-height: 500px;
     background-color: black;
     border-radius: 20px 20px 0 0;
 
 }
-.sub-des{
+.sub-des {
     min-height: 200px;
     background-color: white;
     border-bottom: 2px solid black;
@@ -137,7 +156,7 @@ footer {
     display:grid;
 grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 2rem;
-    padding: 5px 10%;
+    padding: 5% 10%;
 
 
 
@@ -158,7 +177,30 @@ div.on:hover {
 }
 
 /*...........end..............................................................JAmes-Sub-page........................................*/
-@media screen and (min-width:700px){
+@media screen and (max-width:700px){
+       body{
+
+    padding:0 10%;
+           padding-bottom: 0;
+    }
+    header {
+
+        height: 11vh;
+
+    }
+}
+@media screen and (min-width:1000px ){
+       body {
+background-color:red;
+    padding:0 20vw;
+           padding-bottom: 0;
+    }
+    header {
+
+        height: 11vh;
+
+    }
+}
 
  .button-two{
   text-align: center;
