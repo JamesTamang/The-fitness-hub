@@ -95,9 +95,6 @@ footer {
     grid-column: 1/-1;
 }
 
-.sub-info{
-    border: 1px solid black;
-}
 
 .sub-info>ul{
     text-decoration: none;
@@ -120,7 +117,7 @@ grid-template-columns: 1fr 1fr 1fr;
    min-height: 200px;
    width: 100%;
 }
-.sub-try>h2{
+.sub-try > h2{
     grid-column: 1/-1;
     text-align: center;
 }
